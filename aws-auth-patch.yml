@@ -14,7 +14,10 @@ data:
       rolearn: arn:aws:iam::644752792305:role/eksctl-simple-jwt-api-nodegroup-n-NodeInstanceRole-17C402QC9VF6L
       username: system:node:{{EC2PrivateDNSName}}
   mapUsers: |
-    []
+    - userarn: arn:aws:iam::441727829625:user/Admin
+      username: Admin
+      groups:
+        - system:masters
 kind: ConfigMap
 metadata:
   creationTimestamp: "2021-02-26T07:40:38Z"
