@@ -16,6 +16,7 @@ phases:
         # Command for specific kubectl version:
         #- curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.18.0/bin/linux/amd64/kubectl
         # Add comment
+        # Add another
       - chmod +x ./kubectl ./aws-iam-authenticator
       - echo `kubectl version`
       - export PATH=$PWD/:$PATH
